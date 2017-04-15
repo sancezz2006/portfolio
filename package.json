@@ -1,7 +1,7 @@
 {
-  "name": "loftschool-builder",
+  "name": "my-builder",
   "version": "1.0.0",
-  "author": "a.kalin",
+  "author": "morozov",
   "license": "ISC",
   "scripts": {},
   "devDependencies": {
@@ -22,6 +22,7 @@
     "gulp-sourcemaps": "~2.4.0",
     "gulp-svg-sprite": "~1.3.1",
     "gulp-svgmin": "~1.2.2",
+    "gulp.spritesmith": "^6.4.0",
     "jquery": "~3.1.1"
   },
   "dependencies": {
