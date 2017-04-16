@@ -3,9 +3,11 @@
 module.exports = function() {
   $.gulp.task('sprite:png', function() {
 
-    var spriteData = $.gulp.src('./source/sprite/*.png').pipe($.gp.spritesmith({
+    var spriteData = $.gulp.src('./source/sprite/*.{png,gif}').pipe($.gp.spritesmith({
+      imgPath: '/assets/img/sprite.png',
       imgName: 'sprite.png',
       cssName: 'sprite.css',
+      padding: 1,
 
     }));
 
@@ -22,8 +24,6 @@ module.exports = function() {
         .pipe($.gulp.dest($.config.root + '/assets/css'));
 
     return $.merge(imgStream, cssStream);
-
-    //return spriteData.pipe($.gulp.dest($.config.root + '/assets/img'));
 
   })
 };
