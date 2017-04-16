@@ -18,10 +18,11 @@ module.exports = function() {
         .pipe($.gulp.dest($.config.root + '/assets/img'));
 
     var cssStream = spriteData.css
-        .pipe($.gp.csso())
-        .pipe($.gp.sourcemaps.init())
-        .pipe($.gp.sourcemaps.write())
-        .pipe($.gulp.dest($.config.root + '/assets/css'));
+        //.pipe($.gp.csso())
+        //.pipe($.gp.sourcemaps.init())
+        //.pipe($.gp.sourcemaps.write())
+        .pipe($.gp.rename({ extname: ".scss" }))
+        .pipe($.gulp.dest('./source/style/common'));
 
     return $.merge(imgStream, cssStream);
 
