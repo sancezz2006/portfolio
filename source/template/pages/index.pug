@@ -1,7 +1,38 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'about me'
 
 block content
-  include ../common/_greating
+    .wrapper
+
+    section.section.hero
+        ul.socials
+            each item in ['vk','gh','in']
+                li.socials-item
+                    a(href="#" class="socials-link socials-link-"+item)
+        a(href="").hamburger
+        a(href="").down-arrow
+        .hero-title
+            img(src="../../",alt="title").section-title
+            .user.hero-user-block
+                .user-photo
+                .user-name
+                .user-desc
+    section.section.about
+        .about-left
+            svg.triangle.triangle-fill-white
+            .title.about-section-title
+                |Обо мне
+            .user-about
+                .user-about-picture
+                    img(src="../../",alt="title").my-photo
+                .user-about-title.subtitle
+                    | Кто я
+                .user-about-text
+                    p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+
+        .about-right
+            svg.triangle.triangle-fill-beige
+    section.section.map
