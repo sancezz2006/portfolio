@@ -6,33 +6,80 @@ block variables
 block content
     .wrapper
 
-    section.section.hero
-        ul.socials
-            each item in ['vk','gh','in']
-                li.socials-item
-                    a(href="#" class="socials-link socials-link-"+item)
-        a(href="").hamburger
-        a(href="").down-arrow
-        .hero-title
-            img(src="../../",alt="title").section-title
-            .user.hero-user-block
-                .user-photo
-                .user-name
-                .user-desc
-    section.section.about
-        .about-left
-            svg.triangle.triangle-fill-white
-            .title.about-section-title
-                |Обо мне
-            .user-about
-                .user-about-picture
-                    img(src="../../",alt="title").my-photo
-                .user-about-title.subtitle
-                    | Кто я
-                .user-about-text
-                    p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+        section.section.hero
+            ul.socials
+                each item in ['vk','gh','in']
+                    li.socials-item
+                        a(href="#" class="socials-link socials-link-"+item)
+            a(href="").hamburger
+            a(href="").down-arrow
+            .hero-title
+                img(src="/assets/img/header-photo.jpg",alt="title").section-title
+                .user.hero-user-block
+                    .user-photo
+                    .user-name Владимир Астахов
+                    .user-desc Личный сайт веб разработчика
+        section.section.about
+            .about-left
+                svg.triangle.triangle-fill-white
+                .title.about-section-title
+                    |Обо мне
+                .user-about
+                    .user-about-picture
+                        img(src="../../",alt="title").my-photo
+                    .user-about-title.subtitle
+                        | Кто я
+                    .user-about-text
+                        p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
-        .about-right
-            svg.triangle.triangle-fill-beige
-    section.section.map
+            .about-right
+                svg.triangle.triangle-fill-beige
+
+                .about-data
+                    .about-data-secription.about-user-info
+                        .about-user-info-title
+                            .subtitle Чем я могу быть полезен
+                        .about-user-info-text
+                            p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                    .about-data-content
+                        ul.skills
+                            each skill in ['Frontend','Backend','Workflow']
+                                li.skills-item
+                                    .skill-section
+                                        .scill-section-title= skill
+                                        ul.skill-section-list
+                                            each skillName in ['HTML5','CSS3','jQuery']
+                                                .li.skills-section-item
+                                                    .skill
+                                                        svg.skill-circle
+                                                        svg.skill-name= skillName
+
+
+
+        section.section.map
+        footer.footer
+            .footer-menu
+                .left-block
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+
+                .center-block
+                    ul.bottom-menu
+                        each itemMenu in ['Мои работы','Обо мне','Блог','Авторизация']
+                            li.menu-item
+                                a(href="#" class="menu-link") +itemMenu
+
+                    ul.socials
+                        each item in ['vk','gh','in']
+                            li.socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+
+                .right-block
+                    ul.address
+                        li.address skype_kdn
+                        li.address astahov@gmail.com
+                        li.address +7 931 200 93 24
+                        li.address г. Новосибирск, ул. Инская, д.4
+
+            .copyright
+                p © Владимир Астахов | Создано с любовью в LoftSchool | 2016

@@ -1,0 +1,42 @@
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url('/assets/img/header-bg.jpg') no-repeat top;
+}
+.footer{
+  height: 185px;
+  margin-top: -185px;
+  position: relative;
+}
+.empty{
+  height: 185px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+*{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+  margin-top: 0;
+  font-weight: normal;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.center{
+  text-align: center;
+}
