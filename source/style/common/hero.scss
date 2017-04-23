@@ -5,14 +5,25 @@
   color: #FFFFFF;
 }
 .socials-link-vk{
-
+  background-image: ("/assets/img/vk.svg");
+  background-repeat: no-repeat;
 }
 .socials-link-gh{
-
+  background-image: ("/assets/img/github.svg");
+  background-repeat: no-repeat;
 }
 .socials-link-ln{
-
+  background-image: ("/assets/img/.svg");
+  background-repeat: no-repeat;
 }
-.hero-title{
 
+.hero-title{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.section-title{
+  display: inline-block;
+  opacity: 0.2;
 }

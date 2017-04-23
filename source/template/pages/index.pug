@@ -7,55 +7,61 @@ block content
     .wrapper
 
         section.section.hero
-            ul.socials
-                each item in ['vk','gh','in']
-                    li.socials-item
-                        a(href="#" class="socials-link socials-link-"+item)
-            a(href="").hamburger
-            a(href="").down-arrow
-            .hero-title
-                img(src="/assets/img/header-photo.jpg",alt="title").section-title
-                .user.hero-user-block
-                    .user-photo
-                    .user-name Владимир Астахов
-                    .user-desc Личный сайт веб разработчика
+
+                .hero-bg
+                    img(src="/assets/img/header-bg.jpg")
+
+                ul.socials
+                    each item in ['vk','gh','in']
+                        li.socials-item
+                            a(href="#" class="socials-link socials-link-"+item)
+                a(href="").hamburger
+                a(href="").down-arrow
+                    img(src="/assets/img/arrow_down.svg")
+                .hero-title
+                    img(src="/assets/img/stars1.svg",alt="title").section-title
+                    .user.hero-user-block
+                        .user-photo
+                            .user-photo-avatar
+                                img(src="/assets/img/header-avatar.png")
+                        .user-name Владимир Астахов
+                        .user-desc Личный сайт веб разработчика
         section.section.about
-            .about-left
-                svg.triangle.triangle-fill-white
-                .title.about-section-title
-                    |Обо мне
-                .user-about
-                    .user-about-picture
-                        img(src="../../",alt="title").my-photo
-                    .user-about-title.subtitle
-                        | Кто я
-                    .user-about-text
-                        p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            .container
+                .about-left
+                    svg.triangle.triangle-fill-white
+                    .title.about-section-title
+                        |Обо мне
+                    .user-about
+                        .user-about-picture
+                            img(src="../../",alt="title").my-photo
+                        .user-about-title.subtitle
+                            | Кто я
+                        .user-about-text
+                            p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
-            .about-right
-                svg.triangle.triangle-fill-beige
+                .about-right
+                    svg.triangle.triangle-fill-beige
 
-                .about-data
-                    .about-data-secription.about-user-info
-                        .about-user-info-title
-                            .subtitle Чем я могу быть полезен
-                        .about-user-info-text
-                            p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-                    .about-data-content
-                        ul.skills
-                            each skill in ['Frontend','Backend','Workflow']
-                                li.skills-item
-                                    .skill-section
-                                        .scill-section-title= skill
-                                        ul.skill-section-list
-                                            each skillName in ['HTML5','CSS3','jQuery']
-                                                .li.skills-section-item
-                                                    .skill
-                                                        svg.skill-circle
-                                                        svg.skill-name= skillName
-
-
+                    .about-data
+                        .about-data-secription.about-user-info
+                            .about-user-info-title
+                                .subtitle Чем я могу быть полезен
+                            .about-user-info-text
+                                p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                        .about-data-content
+                            ul.skills
+                                each skill in ['Frontend','Backend','Workflow']
+                                    li.skills-item
+                                        .skill-section
+                                            .scill-section-title= skill
+                                            ul.skill-section-list
+                                                each skillName in ['HTML5','CSS3','jQuery']
+                                                    .li.skills-section-item
+                                                        .skill
+                                                            svg.skill-circle
+                                                            svg.skill-name= skillName
 
         section.section.map
         footer.footer
