@@ -8,16 +8,31 @@
   text-align: center;
 }
 .socials-link-vk{
-  background-image: ("/assets/img/vk.svg");
+  background-image: url("/assets/img/vk.svg");
   background-repeat: no-repeat;
+
 }
 .socials-link-gh{
-  background-image: ("/assets/img/github.svg");
+  background-image: url("/assets/img/github.svg");
   background-repeat: no-repeat;
+
 }
 .socials-link-ln{
-  background-image: ("/assets/img/.svg");
+  background-image: url("/assets/img/in.svg");
   background-repeat: no-repeat;
+
+}
+.socials-item{
+  display: inline-block;
+  padding-left: 20px;
+
+}
+.socials-link{
+
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: bottom;
 }
 
 .hero-title{

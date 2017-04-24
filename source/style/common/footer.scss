@@ -6,21 +6,25 @@
 
 }
 .footer-menu{
-  display: inline-block;
+
   height: 145px;
   width: 100%;
+  text-align: left;
+  position:relative;
 }
 .menu-block{
   width: 33%;
+  display:inline-block;
+
 }
 .left-block{
-  display: inline-block;
+  padding-left: 1%;
+
 }
 .center-block{
-  display: inline-block;
 }
 .right-block{
-  display: inline-block;
+  padding-right: 1%;
 }
 
 .copyright{
@@ -32,4 +36,14 @@
 }
 .copyright p{
   top: 50%;
+}
+.address-list{
+
+}
+.menu-item{
+  display: inline;
+}
+.menu-link{
+  color: #ffffff;
+  padding-left: 20px;
 }

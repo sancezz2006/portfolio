@@ -76,21 +76,23 @@ block content
         footer.footer
             .footer-menu
                 .left-block.menu-block
-                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                    p
+                        |Этот сайт я сделал в рамках обучения в<br />
+                        |Школе онлайн образования LoftSchool.
 
                 .center-block.menu-block
                     ul.bottom-menu
                         each itemMenu in ['Мои работы','Обо мне','Блог','Авторизация']
                             li.menu-item
-                                a(href="#" class="menu-link") +itemMenu
+                                a(href="#" class="menu-link")= itemMenu
 
                     ul.socials
-                        each item in ['vk','gh','in']
+                        each item in ['vk','gh','ln']
                             li.socials-item
                                 a(href="#" class="socials-link socials-link-"+item)
 
                 .right-block.menu-block
-                    ul.address
+                    ul.address-list
                         li.address skype_kdn
                         li.address astahov@gmail.com
                         li.address +7 931 200 93 24
