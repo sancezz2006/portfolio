@@ -2,7 +2,10 @@
   height:600px;
   overflow: hidden;
   position: relative;
-  color: #FFFFFF;
+
+}
+.user{
+  text-align: center;
 }
 .socials-link-vk{
   background-image: ("/assets/img/vk.svg");
@@ -22,8 +25,27 @@
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  width: 100%;
 }
 .section-title{
   display: inline-block;
-  opacity: 0.2;
+  opacity: 0.07;
+  width: 20%;
+}
+.user-photo-avatar{
+  display: block;
+  max-width: 100%;
+}
+.hero-user-block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #FFFFFF;
+}
+.user-name{
+  font-size: 35px;
+}
+.user-desc{
+  font-size: 16px;
 }

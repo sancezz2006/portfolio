@@ -1,0 +1,56 @@
+.about{
+  @extend %clearfix;
+}
+
+.about-left, .about-right{
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.about-left{
+  background: $biege;
+}
+
+.about-right{
+  background: $white;
+}
+.triangle{
+  height: 100px;
+  width: 100%;
+}
+.about-triangles{
+  position: absolute;
+  bottom: 100%;
+}
+.triangle-fill-biege{
+  fill: $biege;
+}
+.triangle-fill-white{
+  fill: $white;
+}
+
+.about-section-title{
+
+  position: relative;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/stars2.svg");
+
+}
+
+.title{
+  padding: 45px 80px;
+  display: inline-block;
+  font-size: 63px;
+  color: $maintitlecolor;
+  @include sansus();
+  font-weight: bold;
+}
+
+.user-about-title{
+  font-size: 35px;
+  color: $maintitlecolor;
+  @include sansus();
+}

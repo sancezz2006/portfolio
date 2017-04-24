@@ -27,14 +27,19 @@ block content
                         .user-name Владимир Астахов
                         .user-desc Личный сайт веб разработчика
         section.section.about
-            .container
+
                 .about-left
-                    svg.triangle.triangle-fill-white
+                    svg(viewbox="0 0 1000 95"
+                     preserverAspectRatio="none"
+                     class="triangle triangle-fill-biege about-triangles")
+                        polygon(points="0,0 0,100 1000,100")
+
                     .title.about-section-title
+
                         |Обо мне
                     .user-about
                         .user-about-picture
-                            img(src="../../",alt="title").my-photo
+                            img(src="/assets/img/about-photo.jpg",alt="title").my-photo
                         .user-about-title.subtitle
                             | Кто я
                         .user-about-text
@@ -42,7 +47,10 @@ block content
                             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
                 .about-right
-                    svg.triangle.triangle-fill-beige
+                    svg(viewbox="0 0 1000 95"
+                      preserverAspectRatio="none"
+                      class="triangle triangle-fill-white about-triangles")
+                      polygon(points="0,100 1000,100 1000,0")
 
                     .about-data
                         .about-data-secription.about-user-info

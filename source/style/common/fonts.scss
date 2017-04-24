@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+
+@font-face {
+  font-family: 'sansus';
+  src: url('/assets/fonts/Sansus-Webissimo-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@mixin sansus() {
+  font-family: 'sansus';
+}
