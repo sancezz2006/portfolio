@@ -1,0 +1,35 @@
+.footer{
+  height: 185px;
+  color: #FFFFFF;
+  background: #474b57;
+  opacity: 0.9;
+
+}
+.footer-menu{
+  display: inline-block;
+  height: 145px;
+  width: 100%;
+}
+.menu-block{
+  width: 33%;
+}
+.left-block{
+  display: inline-block;
+}
+.center-block{
+  display: inline-block;
+}
+.right-block{
+  display: inline-block;
+}
+
+.copyright{
+  height: 40px;
+  background: #083c96;
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 10px;
+}
+.copyright p{
+  top: 50%;
+}

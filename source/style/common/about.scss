@@ -1,5 +1,6 @@
 .about{
   @extend %clearfix;
+  width: 100%;
 }
 
 .about-left, .about-right{
@@ -11,12 +12,11 @@
 .about-left{
   background: $biege;
 }
-
 .about-right{
   background: $white;
 }
 .triangle{
-  height: 100px;
+  height: 95px;
   width: 100%;
 }
 .about-triangles{
@@ -31,13 +31,11 @@
 }
 
 .about-section-title{
-
   position: relative;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/assets/img/stars2.svg");
-
 }
 
 .title{
