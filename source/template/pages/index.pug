@@ -34,42 +34,43 @@ block content
                      class="triangle triangle-fill-biege about-triangles")
                         polygon(points="0,0 0,100 1000,100")
 
-                    .title.about-section-title
+                    .left-container
+                        .title.about-section-title
 
-                        |Обо мне
-                    .user-about
-                        .user-about-picture
-                            img(src="/assets/img/about-photo.jpg",alt="title").my-photo
-                        .user-about-title.subtitle
-                            | Кто я
-                        .user-about-text
-                            p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                            |Обо мне
+                        .user-about
+                            .user-about-picture
+                                img(src="/assets/img/about-photo.jpg",alt="title").my-photo
+                            .user-about-title.subtitle
+                                | Кто я
+                            .user-about-text
+                                p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
                 .about-right
                     svg(viewbox="0 0 1000 100"
                       preserveAspectRatio="none"
                       class="triangle triangle-fill-white about-triangles")
                       polygon(points="0,100 1000,100 1000,0")
-
-                    .about-data
-                        .about-data-secription.about-user-info
-                            .about-user-info-title
-                                .subtitle Чем я могу быть полезен
-                            .about-user-info-text
-                                p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-                        .about-data-content
-                            ul.skills
-                                each skill in ['Frontend','Backend','Workflow']
-                                    li.skills-item
-                                        .skill-section
-                                            .scill-section-title= skill
-                                            ul.skill-section-list
-                                                each skillName in ['HTML5','CSS3','jQuery']
-                                                    .li.skills-section-item
-                                                        .skill
-                                                            svg.skill-circle
-                                                            svg.skill-name= skillName
+                    .right-container
+                        .about-data
+                            .about-data-secription.about-user-info
+                                .about-user-info-title
+                                    .subtitle Чем я могу быть полезен
+                                .about-user-info-text
+                                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                            .about-data-content
+                                ul.skills
+                                    each skill in ['Frontend','Backend','Workflow']
+                                        li.skills-item
+                                            .skill-section
+                                                .scill-section-title= skill
+                                                ul.skill-section-list
+                                                    each skillName in ['HTML5','CSS3','jQuery']
+                                                        .li.skills-section-item
+                                                            .skill
+                                                                svg.skill-circle
+                                                                svg.skill-name= skillName
 
         section.section.map
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A240815ada9d9d2f7e5a27b629c2a6a2112d360a31cf2b13e1df92e5b84fe0ed7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>

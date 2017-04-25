@@ -31,6 +31,19 @@
 .triangle-fill-white{
   fill: $white;
 }
+.left-container{
+  max-width: 600px;
+  right: 0px;
+  float: right;
+  padding-right: 50px;
+  text-align: left;
+}
+.right-container{
+  max-width: 600px;
+  float: left;
+  padding-left: 50px;
+  text-align: left;
+}
 
 .about-section-title{
   position: relative;
@@ -41,16 +54,33 @@
 }
 
 .title{
-  padding: 45px 80px;
+
   display: inline-block;
   font-size: 63px;
   color: $maintitlecolor;
   @include sansus();
   font-weight: bold;
+
+}
+.about-user-info-title{
+  font-size: 35px;
+  color: $maintitlecolor;
+  @include sansus();
+  padding-top: 30px;
 }
 
 .user-about-title{
   font-size: 35px;
   color: $maintitlecolor;
   @include sansus();
+}
+.skills{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.about-data-content{
+
+}
+.skills-item{
+  height: 190px;
 }
