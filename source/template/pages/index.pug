@@ -8,13 +8,14 @@ block content
 
         section.section.hero
 
+                ul.socials
+                    each item in ['vk','gh','ln']
+                        li.socials-item
+                            a(href="#" class="socials-link socials-link-"+item)
                 .hero-bg
                     img(src="/assets/img/header-bg.jpg")
 
-                ul.socials
-                    each item in ['vk','gh','in']
-                        li.socials-item
-                            a(href="#" class="socials-link socials-link-"+item)
+
                 a(href="").hamburger
                 a(href="").down-arrow
                     img(src="/assets/img/arrow_down.svg")
