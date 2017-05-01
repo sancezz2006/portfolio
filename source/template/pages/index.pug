@@ -8,17 +8,22 @@ block content
 
         section.section.hero
 
-                ul.socials
-                    each item in ['vk','gh','ln']
-                        li.socials-item
-                            a(href="#" class="socials-link socials-link-"+item)
+
+
+
+                .menu-container
+                    ul.socials
+                        each item in ['vk','gh','ln']
+                            li.socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                    a(href="#").hamburger
+
                 .hero-bg
                     img(src="/assets/img/header-bg.jpg")
 
-
-                a(href="").hamburger
                 a(href="").down-arrow
                     img(src="/assets/img/arrow_down.svg")
+
                 .hero-title
                     img(src="/assets/img/stars1.svg",alt="title").section-title
                     .user.hero-user-block
@@ -27,13 +32,19 @@ block content
                                 img(src="/assets/img/header-avatar.png")
                         .user-name Владимир Астахов
                         .user-desc Личный сайт веб разработчика
+                .hero-triangle
+                    svg(viewbox="0 0 1000 100"
+                                             preserveAspectRatio="none"
+                                             class="triangle triangle-fill-biege about-triangles")
+                                                polygon(points="0,0 0,100 1000,100")
+                    svg(viewbox="0 0 1000 100"
+                                              preserveAspectRatio="none"
+                                              class="triangle triangle-fill-white about-triangles")
+                                              polygon(points="0,100 1000,100 1000,0")
         section.section.about
 
                 .about-left
-                    svg(viewbox="0 0 1000 100"
-                     preserveAspectRatio="none"
-                     class="triangle triangle-fill-biege about-triangles")
-                        polygon(points="0,0 0,100 1000,100")
+
 
                     .left-container
                         .title.about-section-title
@@ -49,10 +60,7 @@ block content
                                 p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
                 .about-right
-                    svg(viewbox="0 0 1000 100"
-                      preserveAspectRatio="none"
-                      class="triangle triangle-fill-white about-triangles")
-                      polygon(points="0,100 1000,100 1000,0")
+
                     .right-container
                         .about-data
                             .about-data-secription.about-user-info
@@ -74,7 +82,16 @@ block content
                                                                 svg.skill-name= skillName
 
         section.section.map
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A240815ada9d9d2f7e5a27b629c2a6a2112d360a31cf2b13e1df92e5b84fe0ed7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
+            .contact-block
+                .subtitle.center Контакты
+                ul.round-icon
+                    li.skype-icon myskype
+                    li.phone-icon +7 922 222-222-22
+                    li.email-icon aaa@bbb.ru
+                    li.map-icon г. Екатеринбурге, ул. Крауля 12
+
+            .interactive-map
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A240815ada9d9d2f7e5a27b629c2a6a2112d360a31cf2b13e1df92e5b84fe0ed7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
         footer.footer
             .footer-menu
                 .left-block.menu-block

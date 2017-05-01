@@ -17,20 +17,8 @@
   background: $white;
 
 }
-.triangle{
-  height: 95px;
-  width: 100%;
-}
-.about-triangles{
-  position: absolute;
-  bottom: 100%;
-}
-.triangle-fill-biege{
-  fill: $biege;
-}
-.triangle-fill-white{
-  fill: $white;
-}
+
+
 .left-container{
   max-width: 600px;
   right: 0px;
@@ -63,10 +51,13 @@
 
 }
 .about-user-info-title{
+
+  padding-top: 30px;
+}
+.subtitle{
   font-size: 35px;
   color: $maintitlecolor;
   @include sansus();
-  padding-top: 30px;
 }
 
 .user-about-title{

@@ -1,3 +1,23 @@
 .map{
   height: 720px;
+  position: relative;
+
+}
+.contact-block{
+
+
+  height: 285px;
+  margin:0 35% 0 35%;
+  width:30%;
+
+  position: absolute;
+  background: #474b57;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 4;
+  top: 20%;
+
+}
+
+.interactive-map{
+  z-index: 5;
 }

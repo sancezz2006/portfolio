@@ -1,20 +1,25 @@
 .footer{
+
   height: 185px;
   color: #FFFFFF;
   background: #474b57;
   opacity: 0.9;
 
+
+
 }
 .footer-menu{
+  display: flex;
+  flex-direction: row;
 
   height: 145px;
-  width: 100%;
-  text-align: left;
-  position:relative;
+
+
 }
 .menu-block{
   width: 33%;
-  display:inline-block;
+  justify-content: space-between;
+  padding-top: 15px;
 
 }
 .left-block{
@@ -28,11 +33,14 @@
 }
 
 .copyright{
+
+
   height: 40px;
   background: #083c96;
   opacity: 0.8;
   text-align: center;
   padding-top: 10px;
+  bottom: 0px;
 }
 .copyright p{
   top: 50%;
