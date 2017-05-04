@@ -1,0 +1,36 @@
+{
+  "skills":[
+    { "skill":"FrontEnd",
+      "items":[
+        {
+          "name":"HTML5",
+          "percent":90
+        },
+        {
+          "name":"CSS",
+          "percent":90
+        },
+        {
+          "name":"JS",
+          "percent":60
+        }
+      ]
+    },
+    { "skill":"BackEnd",
+      "items":[
+        {
+          "name":"PHP",
+          "percent":90
+        },
+        {
+          "name":"MySQL",
+          "percent":90
+        },
+        {
+          "name":"NodeJS",
+          "percent":10
+        }
+      ]
+    }
+  ]
+}

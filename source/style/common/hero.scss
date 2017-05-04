@@ -18,34 +18,20 @@
   padding: 28px 30px
 }
 .hamburger{
-  background-image: url("/assets/img/hamburger.svg");
-  background-repeat: no-repeat;
-  color: #fff;
+
   width: 40px;
   height: 35px;
-  transition: all 0.5s ease;
+
 
 }
 .socials{
 
   top:10px;
+  display: flex;
+
 
 }
-.socials-link-vk{
-  background-image: url("/assets/img/vk.svg");
-  background-repeat: no-repeat;
 
-}
-.socials-link-gh{
-  background-image: url("/assets/img/github.svg");
-  background-repeat: no-repeat;
-
-}
-.socials-link-ln{
-  background-image: url("/assets/img/in.svg");
-  background-repeat: no-repeat;
-
-}
 .socials-item{
   display: inline-block;
   padding-left: 20px;
@@ -54,9 +40,19 @@
 .socials-link{
 
   display: block;
+  width: 25px;
+  height: 25px;
+  align-items: center;;
+}
+
+.socials-link-vk{
   width: 30px;
+}
+.socials-link-gh{
   height: 30px;
-  background-position: bottom;
+}
+.socials-link-in{
+ height: 22px;
 }
 
 .hero-title{
@@ -85,6 +81,7 @@
 }
 .user-name{
   font-size: 35px;
+  font-weight: bold;
 }
 .user-desc{
   font-size: 16px;

@@ -12,11 +12,13 @@ block content
 
 
                 .menu-container
-                    ul.socials
-                        each item in ['vk','gh','ln']
-                            li.socials-item
+                    .socials
+                        each item in ['vk','github','in']
+                            .socials-item
                                 a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
                     a(href="#").hamburger
+                        +add-svg('hamburger')
 
                 .hero-bg
                     img(src="/assets/img/header-bg.jpg")
@@ -64,26 +66,17 @@ block content
                     .right-container
                         .about-data
                             .about-data-secription.about-user-info
-                                .about-user-info-title
+                                h2.about-user-info-title.design-line
                                     .subtitle Чем я могу быть полезен
                                 .about-user-info-text
                                     p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
                             .about-data-content
-                                ul.skills
-                                    each skill in ['Frontend','Backend','Workflow']
-                                        li.skills-item
-                                            .skill-section
-                                                .scill-section-title= skill
-                                                ul.skill-section-list
-                                                    each skillName in ['HTML5','CSS3','jQuery']
-                                                        .li.skills-section-item
-                                                            .skill
-                                                                svg.skill-circle
-                                                                svg.skill-name= skillName
+                            -var mySkills = skills
+                            +skills-list(mySkills)
 
         section.section.map
-            .contact-block
-                .subtitle.center Контакты
+            .contact-block.center
+                h2.subtitle.center.design-line Контакты
                 ul.round-icon
                     li.skype-icon myskype
                     li.phone-icon +7 922 222-222-22
@@ -105,10 +98,11 @@ block content
                             li.menu-item
                                 a(href="#" class="menu-link")= itemMenu
 
-                    ul.socials
-                        each item in ['vk','gh','ln']
-                            li.socials-item
+                    .socials.bottom-socials
+                        each item in ['vk','github','in']
+                            .socials-item
                                 a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
 
                 .right-block.menu-block
                     ul.address-list

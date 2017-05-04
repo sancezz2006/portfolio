@@ -46,18 +46,19 @@
   display: inline-block;
   font-size: 63px;
   color: $maintitlecolor;
-  @include sansus();
   font-weight: bold;
+  text-transform: uppercase;
 
 }
 .about-user-info-title{
 
-  padding-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
 }
 .subtitle{
   font-size: 35px;
   color: $maintitlecolor;
-  @include sansus();
 }
 
 .user-about-title{

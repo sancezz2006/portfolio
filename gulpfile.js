@@ -14,6 +14,7 @@ global.$ = {
   buffer: require('vinyl-buffer'),
   merge: require('merge-stream'),
   browserSync: require('browser-sync').create(),
+  fs:require('fs'),
   gp: require('gulp-load-plugins')()
 };
 
