@@ -7,11 +7,11 @@
           "percent":90
         },
         {
-          "name":"CSS",
+          "name":"CSS3",
           "percent":90
         },
         {
-          "name":"JS",
+          "name":"JavaScript & jQuery",
           "percent":60
         }
       ]
@@ -24,11 +24,32 @@
         },
         {
           "name":"MySQL",
+          "percent":80
+        },
+        {
+          "name":"Node.js & npm",
+          "percent":30
+        },
+        {
+          "name":"Mongo.db",
+          "percent":15
+        }
+      ]
+    }
+  ,
+    { "skill":"WorkFlow",
+      "items":[
+        {
+          "name":"Git",
           "percent":90
         },
         {
-          "name":"NodeJS",
-          "percent":10
+          "name":"Gulp",
+          "percent":90
+        },
+        {
+          "name":"Bower",
+          "percent":55
         }
       ]
     }

@@ -56,6 +56,10 @@
   text-align: center;
   width: 100%;
 }
+.about-user-info-text{
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
 .subtitle{
   font-size: 35px;
   color: $maintitlecolor;
@@ -75,4 +79,41 @@
 }
 .skills-item{
   height: 190px;
+}
+
+.skills-list{
+  display: flex;
+  flex-flow: row;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.skills-lists-items{
+  display: flex;
+  flex-flow: row;
+}
+.info-circle{
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.info-name-text{
+  position: absolute;
+  top: 60px;
+  left:60px;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  text-align: center;
+}
+.skills-list-item-title{
+
+  font-size: 28px;
+  color: #474b57;
+  -webkit-margin-after: 0px;
+  -webkit-margin-before: 0em;
+}
+.info-circle-img{
+
+  transform: rotate(270deg);
+  filter: FlipV;
 }

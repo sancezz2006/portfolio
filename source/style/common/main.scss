@@ -48,6 +48,8 @@ h1,h2,h3,h4,h5{
 
   margin-top: 0;
   font-weight: normal;
+  -webkit-margin-after: 0px;
+  -webkit-margin-before: 0em;
 
 }
 .container{
@@ -81,4 +83,9 @@ h1,h2,h3,h4,h5{
     height: 3px;
     background:rgba(71, 75, 87, 0.5);
   }
+}
+
+h3{
+
+
 }

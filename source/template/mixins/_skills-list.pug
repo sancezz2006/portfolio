@@ -2,10 +2,11 @@ mixin skills-list(data)
       if(data)
          ul.skills
              each item, index in data
-                 li.infograf-lists--item
-                    h3.t-h3.infograf-lists--item-title #{item.skill}
+                 h3.skills-list-item-title #{item.skill}
+                 li.skills-list
+
                     if(item.items)
-                     ul.infograf-lists--item-items
+                     ul.skills-lists-items
                         each circle, i in item.items
                          li.infograf-lists--items
                            +skill-circle(circle)

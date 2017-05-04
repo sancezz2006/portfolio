@@ -1,9 +1,12 @@
 mixin skill-circle(data)
       if(data)
           .info-circle(data-percent=data.percent)
+              - var skillOpacity = data.percent*0.01
+              - var skillOpacity1 = "0.5"
               - var c = Math.PI*(45*2);
               - var pct = ((100-data.percent)/100)*c
-              svg(viewBox="0 0 120 120", class="info-circle--img svg-icon")
+              svg(viewBox="0 0 120 120", class="info-circle-img svg-icon")
                   circle(fill="none", stroke-width="15", stroke="#dfdcd5", cx="60", cy="60", r="45")
-                  circle(fill="none", stroke-width="15", stroke="#6c9c5a", cx="60", cy="60", r="45", stroke-dasharray=c, stroke-dashoffset=pct)
-              .info-circle--text #{data.name}
+                  circle(opacity=skillOpacity fill="none", stroke-width="15", stroke="#004cd1", cx="60", cy="60", r="45", stroke-dasharray=c, stroke-dashoffset=pct)
+
+              .info-name-text #{data.name}
