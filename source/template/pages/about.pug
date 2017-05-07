@@ -1,0 +1,122 @@
+extends ../_template
+
+block variables
+  - var title = 'about me'
+
+block content
+    .wrapper
+
+        section.section.hero
+                .hero-bg(style="transform: translate3d(0px, 0%, 0px);")
+
+                .menu-container
+                    .socials
+                        each item in ['vk','github','in']
+                            .socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
+                    a(href="#").hamburger
+                        +add-svg('hamburger')
+
+                .hero-title
+                    img(src="/assets/img/stars1.svg",alt="title").section-title
+                    .user.hero-user-block
+                        .user-photo
+                            .user-photo-avatar
+                                img(src="/assets/img/header-avatar.png")
+                        .user-name Владимир Астахов
+                        .user-desc Личный сайт веб разработчика
+                .hero-triangle
+                    a(href="").down-arrow
+                        +add-svg("arrow_down")
+                    svg(viewbox="0 0 1000 100"
+                                             preserveAspectRatio="none"
+                                             class="triangle triangle-fill-biege about-triangles")
+                                                polygon(points="0,0 0,100 1000,100")
+                    svg(viewbox="0 0 1000 100"
+                                              preserveAspectRatio="none"
+                                              class="triangle triangle-fill-white about-triangles")
+                                              polygon(points="0,100 1000,100 1000,0")
+        section.section.about
+
+                .about-left
+
+
+                    .left-container
+                        .title.about-section-title
+
+                            |Обо мне
+                        .user-about
+                            .user-about-picture
+                                img(src="/assets/img/about-photo.jpg",alt="title").my-photo
+                            .user-about-title.subtitle
+                                | Кто я
+                            .user-about-text
+                                p Я веб разработчик из Екатеринбурга. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+
+                .about-right
+
+                    .right-container
+                        .about-data
+                            .about-data-secription.about-user-info
+                                h2.about-user-info-title.design-line
+                                    .subtitle Чем я могу быть<br />вам полезен
+
+                                .about-user-info-text
+                                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                            .about-data-content
+                            -var mySkills = skills
+                            +skills-list(mySkills)
+
+        section.section.map
+            .contact-block.center
+                h2.subtitle.center.design-line Контакты
+                ul.round-icon-list
+                    li.map-icon.skype-icon
+                        span myskype
+                        .round-icon
+                            +add-svg-circle("skype")
+                    li.map-icon.phone-icon
+                        span +7 922 222-222-22
+                        .round-icon
+                            +add-svg-circle("phone")
+                    li.map-icon.email-icon
+                        span aaa@bbb.ru
+                        .round-icon
+                            +add-svg-circle("skype")
+                    li.map-icon.map-icon
+                        span г. Екатеринбурге, ул. Крауля 12
+                        .round-icon
+                            +add-svg-circle("map_marker")
+
+            .interactive-map
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A240815ada9d9d2f7e5a27b629c2a6a2112d360a31cf2b13e1df92e5b84fe0ed7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
+        footer.footer
+            .footer-menu
+                .left-block.menu-block
+                    p
+                        |Этот сайт я сделал в рамках обучения в<br />
+                        |Школе онлайн образования LoftSchool.
+
+                .center-block.menu-block
+                    ul.bottom-menu
+                        each itemMenu in ['Мои работы','Обо мне','Блог','Авторизация']
+                            li.menu-item
+                                a(href="#" class="menu-link")= itemMenu
+
+                    .socials.bottom-socials
+                        each item in ['vk','github','in']
+                            .socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
+
+                .right-block.menu-block
+                    ul.address-list
+                        li.address skype_kdn
+                        li.address astahov@gmail.com
+                        li.address +7 931 200 93 24
+                        li.address г. Новосибирск, ул. Инская, д.4
+
+            .copyright
+                p © Владимир Астахов | Создано с любовью в LoftSchool | 2016

@@ -1,0 +1,87 @@
+extends ../_template
+
+block variables
+  - var title = 'about me'
+
+block content
+    .wrapper
+
+        section.section.hero-blog
+                .hero-bg(style="transform: translate3d(0px, 0%, 0px);")
+
+                .menu-container
+                    .socials
+                        each item in ['vk','github','in']
+                            .socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
+                    a(href="#").hamburger
+                        +add-svg('hamburger')
+
+                .hero-title
+                    img(src="/assets/img/stars1.svg",alt="title").section-title
+                    .user.hero-user-block
+                        .user-photo
+                            .user-photo-avatar
+                                img(src="/assets/img/header-avatar.png")
+                        .user-name Блог
+                        .user-desc Полезные заметки
+                .hero-triangle
+
+                    svg(viewbox="0 0 1000 100"
+                                             preserveAspectRatio="none"
+                                             class="triangle triangle-fill-blog about-triangles")
+                                                polygon(points="0,0 0,100 1000,100")
+                    svg(viewbox="0 0 1000 100"
+                                              preserveAspectRatio="none"
+                                              class="triangle triangle-fill-blog about-triangles")
+                                              polygon(points="0,100 1000,100 1000,0")
+        section.section.about.about-blog
+
+                .about-left.blog-bg
+
+
+                    .left-container
+                        ul.left-menu
+                            li.menu-item Самое важное в SASS
+                            li.menu-item Приёмы в вёрстке, без которых не обходится ни один сайт
+                            li.menu-item Самый необходимый набор Gulp плагинов
+                            li.menu-item Почему я выбрал Jade
+
+                .about-right.blog-bg
+
+                    .right-container
+                        .about-data
+                            p
+                            | Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                            | Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+
+
+        footer.footer.footer-blog
+            .footer-menu
+                .left-block.menu-block
+                    p
+                        |Этот сайт я сделал в рамках обучения в<br />
+                        |Школе онлайн образования LoftSchool.
+
+                .center-block.menu-block
+                    ul.bottom-menu
+                        each itemMenu in ['Мои работы','Обо мне','Блог','Авторизация']
+                            li.menu-item
+                                a(href="#" class="menu-link")= itemMenu
+
+                    .socials.bottom-socials
+                        each item in ['vk','github','in']
+                            .socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
+
+                .right-block.menu-block
+                    ul.address-list
+                        li.address skype_kdn
+                        li.address astahov@gmail.com
+                        li.address +7 931 200 93 24
+                        li.address г. Новосибирск, ул. Инская, д.4
+
+            .copyright
+                p © Владимир Астахов | Создано с любовью в LoftSchool | 2016
