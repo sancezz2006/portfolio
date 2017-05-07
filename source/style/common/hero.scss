@@ -8,8 +8,15 @@
   text-align: center;
 }
 .hero-bg{
-
+  background: url(/assets/img/header-bg.jpg) no-repeat 50% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  height: calc(100vh );
 }
+
+
 .menu-container{
   position: absolute;
   width: 100%;
@@ -100,4 +107,16 @@
 }
 .triangle-fill-white{
   fill: $white;
+}
+
+.down-arrow{
+  position: absolute;
+
+  transform: translateX(-50%);
+  width: 54px;
+  left: 50%;
+  text-align: center;
+  opacity: .5;
+  transition: opacity 0.25s linear;
+  animation: arrow 1s ease-in-out infinite;
 }

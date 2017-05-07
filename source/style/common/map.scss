@@ -12,7 +12,7 @@
 
   position: absolute;
   background: #474b57;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.65);
   z-index: 4;
   top: 20%;
 
@@ -20,4 +20,45 @@
 
 .interactive-map{
   z-index: 5;
+}
+.round-icon-list{
+display: flex;
+  flex-wrap: wrap;
+  column-count: 2;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+.map-icon{
+
+  color: rgba(71, 75, 87, 0.9);
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-left: 25px;
+
+
+
+}
+.map-icon span{
+  padding-left: 10px;
+  max-width: 80%;
+
+
+}
+.round-icon{
+
+  padding-top: 10px;
+}
+.svg-icon-circle{
+  width: 45px;
+  height: 45px;
+  fill: #FFFFFF;
+
 }

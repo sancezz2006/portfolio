@@ -1,0 +1,41 @@
+extends ../_template
+
+block variables
+  - var title = 'about me'
+
+block content
+    .wrapper
+
+        section.section.hero.hero-welcome
+            .hero-bg
+
+            .hero-welcome-container
+                .user-container
+                    form.login-form(name="auth" action="/login" method="POST")
+                        .frame-form
+                            p.form-title Авторизуйтесь
+                            .form-field-group
+                                input.form-field.text-field(type="text" placeholder="Логин" data-filed="Логин")
+                                .form-icon
+                                    +add-svg("login")
+                            .form-field-group
+                                input.form-field.text-field(type="password" placeholder="Пароль" data-filed="Пароль")
+                                .form-icon
+                                    +add-svg("password")
+                            .form-field-group
+                                input.form-checkbox(type="checkbox" name="imman" required)
+                                lable.form-label Я человек
+                            p.form-text Вы точно не робот?
+                            .form-field-group
+                                input.form-radio(type="radio" name="norobots" value="yes")
+                                lable.form-label Да
+
+                                input.form-radio(type="radio" name="norobots" value="no" checked)
+                                lable.form-label Не уверен
+                        .login-form-menu
+                            a(href="").login-form-btn.spacer На главную
+                            input.login-form-btn(type="submit" value="Войти")
+
+
+
+
