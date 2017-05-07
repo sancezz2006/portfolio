@@ -14,10 +14,13 @@
   position: absolute;
 }
 .user-container{
-
-
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
   width: 100%;
   background-color: rgba(28, 31, 41, 0.5);
+
+  height: 400px;
 
   color: #FFFFFF;
 }
@@ -28,6 +31,7 @@ display: flex;
 }
 .frame-form{
   padding: 2.5rem 1.25rem;
+  min-height: 300px;
 }
 .form-title{
   text-transform: uppercase;
@@ -96,9 +100,28 @@ display: flex;
   text-align: center;
   line-height: 2.8125rem;
   color: #ffffff;
-  background-color: rgba(5, 72, 190, 0.85);
+  background-color: rgba(5, 72, 190, 0.7);
   border: none;
 }
+
+.login-form-btn:hover{
+  background-color: rgba(8, 60, 150, 0.7);
+}
+
+
 .spacer{
   border-right: 0.125rem solid rgba(222, 227, 231, 0.5);
+}
+.socials-main{
+  padding-top: 10px;
+  padding-bottom: 35px;
+  align-self: center;
+}
+
+.hero-user-block-login{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #FFFFFF;
 }

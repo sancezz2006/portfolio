@@ -1,0 +1,36 @@
+extends ../_template
+
+block variables
+  - var title = 'about me'
+
+block content
+    .wrapper
+
+        section.section.hero.hero-welcome
+            .hero-bg
+
+            .hero-welcome-container
+                .user-container
+
+
+
+                    .user.hero-user-block-login.width100
+                                                .user-photo
+                                                    .user-photo-avatar
+                                                        img(src="/assets/img/header-avatar.png")
+                                                .user-name Владимир Астахов
+                                                .user-desc Личный сайт веб разработчика
+                    .socials.socials-main
+                                                each item in ['vk','github','in']
+                                                    .socials-item
+                                                        a(href="#" class="socials-link socials-link-"+item)
+                                                            +add-svg(item)
+
+                    .login-form-menu
+                        a(href="").login-form-btn.spacer Мои работы
+                        a(href="").login-form-btn.spacer Обо мне
+                        a(href="").login-form-btn Блог
+
+
+
+
