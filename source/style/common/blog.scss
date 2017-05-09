@@ -3,6 +3,9 @@ height: 400px;
   overflow: hidden;
   position: relative;
 }
+.hero-bg-blog{
+  height: calc(75vh );
+}
 .footer-blog{
   margin-top:0px;
 }
@@ -15,11 +18,12 @@ fill: #faf8f0;
 .about-blog{
   background: #faf8f0;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 210px;
   display: flex;
   flex-flow: row;
 
   justify-content: center;
+
 }
 .blog-left-side{
   max-width: 17rem;

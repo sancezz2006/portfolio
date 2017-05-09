@@ -7,7 +7,7 @@ block content
     .wrapper
 
         section.section.hero-blog
-                .hero-bg(style="transform: translate3d(0px, 0%, 0px);")
+                .hero-bg.hero-bg-blog(style="transform: translate3d(0px, 0%, 0px);")
 
                 .menu-container
                     .socials
@@ -59,31 +59,4 @@ block content
                             | Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
 
 
-        footer.footer.footer-blog
-            .footer-menu
-                .left-block.menu-block
-                    p
-                        |Этот сайт я сделал в рамках обучения в<br />
-                        |Школе онлайн образования LoftSchool.
-
-                .center-block.menu-block
-                    ul.bottom-menu
-                        each itemMenu in ['Мои работы','Обо мне','Блог','Авторизация']
-                            li.menu-item
-                                a(href="#" class="menu-link")= itemMenu
-
-                    .socials.bottom-socials
-                        each item in ['vk','github','in']
-                            .socials-item
-                                a(href="#" class="socials-link socials-link-"+item)
-                                    +add-svg(item)
-
-                .right-block.menu-block
-                    ul.address-list
-                        li.address skype_kdn
-                        li.address astahov@gmail.com
-                        li.address +7 931 200 93 24
-                        li.address г. Новосибирск, ул. Инская, д.4
-
-            .copyright
-                p © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+        include includes/_footer

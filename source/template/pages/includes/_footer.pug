@@ -1,0 +1,28 @@
+footer.footer
+            .footer-menu
+                .left-block.menu-block
+                    p
+                        |Этот сайт я сделал в рамках обучения в<br />
+                        |Школе онлайн образования LoftSchool.
+
+                .center-block.menu-block
+                    ul.bottom-menu
+                        each itemMenu in ['Мои работы','Обо мне','Блог','Авторизация']
+                            li.menu-item
+                                a(href="#" class="menu-link")= itemMenu
+
+                    .socials.bottom-socials
+                        each item in ['vk','github','in']
+                            .socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
+
+                .right-block.menu-block
+                    ul.address-list
+                        li.address-list-item skype_kdn
+                        li.address-list-item astahov@gmail.com
+                        li.address-list-item +7 931 200 93 24
+                        li.address-list-item г. Новосибирск, ул. Инская, д.4
+
+            .copyright
+                p © Владимир Астахов | Создано с любовью в LoftSchool | 2016

@@ -1,0 +1,23 @@
+section.section.map
+            .contact-block.center
+                h2.subtitle.center.design-line Контакты
+                ul.round-icon-list
+                    li.map-icon.skype-icon
+                        span myskype
+                        .round-icon
+                            +add-svg-circle("skype")
+                    li.map-icon.phone-icon
+                        span +7 922 222-222-22
+                        .round-icon
+                            +add-svg-circle("phone")
+                    li.map-icon.email-icon
+                        span aaa@bbb.ru
+                        .round-icon
+                            +add-svg-circle("skype")
+                    li.map-icon.map-icon
+                        span г. Екатеринбурге, ул. Крауля 12
+                        .round-icon
+                            +add-svg-circle("map_marker")
+
+            .interactive-map
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A240815ada9d9d2f7e5a27b629c2a6a2112d360a31cf2b13e1df92e5b84fe0ed7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
