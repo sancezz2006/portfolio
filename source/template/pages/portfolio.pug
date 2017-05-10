@@ -1,0 +1,64 @@
+extends ../_template
+
+block variables
+  - var title = 'about me'
+
+block content
+    .wrapper
+
+        section.section.hero-blog
+                .hero-bg.hero-bg-blog(style="transform: translate3d(0px, 0%, 0px);")
+
+                .menu-container
+                    .socials
+                        each item in ['vk','github','in']
+                            .socials-item
+                                a(href="#" class="socials-link socials-link-"+item)
+                                    +add-svg(item)
+                    a(href="#").hamburger
+                        +add-svg('hamburger')
+
+                .hero-title
+                                    img(src="/assets/img/stars1.svg",alt="title").section-title
+                                    .user.hero-user-block
+                                        .user-photo
+                                            .user-photo-avatar
+                                                img(src="/assets/img/header-avatar.png")
+                                        .user-name Владимир Астахов
+                                        .user-desc Личный сайт веб разработчика
+                .hero-triangle
+                    a(href="").down-arrow
+                                            +add-svg("arrow_down")
+
+                    svg(viewbox="0 0 1000 100"
+                                             preserveAspectRatio="none"
+                                             class="triangle triangle-fill-blog about-triangles")
+                                                polygon(points="0,0 0,100 1000,100")
+                    svg(viewbox="0 0 1000 100"
+                                              preserveAspectRatio="none"
+                                              class="triangle triangle-fill-blog about-triangles")
+                                              polygon(points="0,100 1000,100 1000,0")
+        section.section.about-portfolio
+
+                .portfolio-left-side.works-block
+
+
+                    .left-container-blog
+                        ul
+                            li.menu-item-blog.active Самое важное в SASS
+                            li.menu-item-blog Приёмы в вёрстке, без которых не обходится ни один сайт
+                            li.menu-item-blog Самый необходимый набор Gulp плагинов
+                            li.menu-item-blog Почему я выбрал Jade
+
+                .portfolio-right-side.works-block
+
+                    .right-container-blog
+                        .about-data
+                            h2.subtitle Самое важное в SASS
+                            span.blog-item-create-date 09.05.2017
+                            p
+                            | Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                            | Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+
+
+        include includes/_footer

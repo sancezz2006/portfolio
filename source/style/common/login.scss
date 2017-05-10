@@ -125,3 +125,25 @@ display: flex;
   transform: translate(-50%,-50%);
   color: #FFFFFF;
 }
+
+.auth-btn{
+  position: absolute;
+  top: 1.5625rem;
+  right: 1.5625rem;
+  border: 0.0625rem solid #ffffff;
+  padding: 0 1.75rem;
+  line-height: 2.6875rem;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: #083c96;
+    border-color: #083c96;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}}
