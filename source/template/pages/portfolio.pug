@@ -6,8 +6,8 @@ block variables
 block content
     .wrapper
 
-        section.section.hero-blog
-                .hero-bg.hero-bg-blog(style="transform: translate3d(0px, 0%, 0px);")
+        section.section.portfolio-blog
+                .hero-bg.portfolio-blog-bg(style="transform: translate3d(0px, 0%, 0px);")
 
                 .menu-container
                     .socials
@@ -26,29 +26,37 @@ block content
                                                 img(src="/assets/img/header-avatar.png")
                                         .user-name Владимир Астахов
                                         .user-desc Личный сайт веб разработчика
-                .hero-triangle
+                .portfolio-triangle
                     a(href="").down-arrow
                                             +add-svg("arrow_down")
 
                     svg(viewbox="0 0 1000 100"
                                              preserveAspectRatio="none"
-                                             class="triangle triangle-fill-blog about-triangles")
+                                             class="triangle about-triangles triangle-fill-dark")
                                                 polygon(points="0,0 0,100 1000,100")
                     svg(viewbox="0 0 1000 100"
                                               preserveAspectRatio="none"
-                                              class="triangle triangle-fill-blog about-triangles")
+                                              class="triangle about-triangles triangle-fill-dark")
                                               polygon(points="0,100 1000,100 1000,0")
+                .portfolio-title
+                    h2 Мои работы
         section.section.about-portfolio
 
-                .portfolio-left-side.works-block
+                .portfolio-left-side.works-block.about-left
 
 
                     .left-container-blog
-                        ul
-                            li.menu-item-blog.active Самое важное в SASS
-                            li.menu-item-blog Приёмы в вёрстке, без которых не обходится ни один сайт
-                            li.menu-item-blog Самый необходимый набор Gulp плагинов
-                            li.menu-item-blog Почему я выбрал Jade
+                        .work-description
+                            h2.about-user-info-title.design-line
+                                .subtitle.width75 Сайт школы онлайн образования
+                            .work-content HTML, CSS, JS
+
+                            a(href="/login.html").default-btn.link-icon Посмотреть сайт
+                                +add-svg('link')
+
+
+
+
 
                 .portfolio-right-side.works-block
 

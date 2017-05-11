@@ -1,7 +1,7 @@
 .about-portfolio{
   background: #faf8f0;
-  padding-top: 70px;
-  padding-bottom: 210px;
+
+  padding-bottom: 185px;
   display: flex;
   flex-flow: row;
 
@@ -14,6 +14,17 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+.work-description{
+  display: flex;
+  flex-flow: column;
+}
+.work-content{
+  color: $maincolor;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .portfolio-left-side{
 
@@ -21,4 +32,51 @@
 
 .portfolio-right-side{
 
+}
+.default-btn{
+
+}
+.link-icon{
+
+}
+.link-icon .svg-icon{
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: 9px;
+
+}
+.portfolio-right-side{
+  background-color: $gray;
+
+}
+
+.portfolio-triangle{
+  position: absolute;
+  bottom: 11.5625rem;
+  display: flex;
+  width: 100%;
+
+}
+
+.portfolio-triangle svg{
+  width: 50%;
+}
+
+.portfolio-title{
+  position: absolute;
+  height: 11.5625rem;
+  bottom: 0;
+  text-align: center;
+
+  width: 100%;
+  background-color: rgba(13, 17, 32, 0.85);
+}
+.portfolio-blog{
+  height: 785px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-blog-bg{
+  height: calc(150vh);
 }

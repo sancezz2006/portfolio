@@ -93,3 +93,44 @@ h3{
 .width100{
   width: 100%;
 }
+.width75{
+  width: 75%;
+}
+
+.default-btn{
+
+  border: 0.0625rem solid #ffffff;
+  padding: 0 1rem;
+  line-height: 2.6875rem;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  background-color: #083c96;
+  width: 200px;
+  align-self: center;
+
+  &:hover {
+    background-color: #083c96;
+    border-color: #083c96;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }}
+
+.triangle-fill-biege{
+  fill: $biege;
+}
+.triangle-fill-white{
+  fill: $white;
+}
+
+.triangle-fill-gray{
+  fill: $gray;
+}
+.triangle-fill-dark{
+  fill: $dark;
+  opacity: 0.85;
+}
