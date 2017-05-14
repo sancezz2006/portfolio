@@ -11,8 +11,7 @@
 
 .works-block{
   width: 50%;
-  padding-left: 100px;
-  padding-right: 100px;
+
 }
 .work-description{
   display: flex;
@@ -96,8 +95,23 @@
   flex-flow: column;
 }
 .portfolio-main-slider{
-
+display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.portfolio-two-slider{
 
+.portfolio-two-slider{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+ align-content: center;
+  width: 100%;
+}
+.slider-item{
+  width: 50%;
+}
+.big-slider-item{
+  width: 100%;
 }
