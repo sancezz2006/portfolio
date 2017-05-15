@@ -54,10 +54,6 @@ block content
                             a(href="/login.html").default-btn.link-icon Посмотреть сайт
                                 +add-svg('link')
 
-
-
-
-
                 .portfolio-right-side.works-block
 
                     .right-container-blog
@@ -65,8 +61,55 @@ block content
                             .portfolio-main-slider
                                 img(src="/assets/img/slider/1.jpg",alt="title").big-slider-item
                             .portfolio-two-slider
-                                img(src="/assets/img/slider/2.jpg",alt="title").slider-item
-                                img(src="/assets/img/slider/3.jpg",alt="title").slider-item
+                                .slider-item
+
+                                    img(src="/assets/img/slider/2.jpg",alt="title").slider-prev-btn.slider-img
+                                    +add-svg("portf_arrow_down")
+
+                                .slider-item
+
+                                    img(src="/assets/img/slider/3.jpg",alt="title").slider-next-btn.slider-img
+                                    +add-svg("portf_arrow_up")
+
+
+
+
+        section.section.testimonials-portfolio
+            .testimonials-title
+                |Что говорят <br /> обо мне
+            .testimonials-items
+                .testimonials-item
+                    img(src="/assets/img/testimonials/1.png").testimonial-avatar
+                    .testimonial-description Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .testimonial-name Ковальчук Дмитрий
+                    .testimonial-work — основатель Loftschool
+
+                .testimonials-item
+                    img(src="/assets/img/testimonials/2.png").testimonial-avatar
+                    .testimonial-description Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .testimonial-name Сабанцев Владимир
+                    .testimonial-work — преподаватель
+
+            .testimonials-mailform
+                .user-container
+                                    form.login-form(name="auth" action="/login" method="POST")
+                                        .frame-form
+                                            p.form-title.design-line Связаться со мной
+                                            .form-field-group
+                                                input.form-field.text-field.transparent-bg(type="text" placeholder="Ваше имя" data-filed="login")
+
+
+                                            .form-field-group
+                                                input.form-field.text-field.transparent-bg(type="text" placeholder="Ваш email" data-filed="email")
+
+                                            .form-field-group
+                                                textarea.form-field.textarea-field.transparent-bg( rows="7" type="text" placeholder="Ваше сообщение" data-filed="text")
+
+
+
+                                        .login-form-menu
+                                            input.login-form-btn.spacer(type="submit" value="Отправить")
+                                            a(href="/").login-form-btn Очистить
 
 
 
